@@ -30,6 +30,7 @@ socket.on("onundo", function() {
   undoMaker();
 });
 socket.on("onredo", function() {
+  console.log("stop Event");
   redoMaker();
 });
 
