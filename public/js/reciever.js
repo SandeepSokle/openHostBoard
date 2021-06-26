@@ -34,5 +34,6 @@ socket.on("onredo", function() {
 });
 
 socket.on("onclick",function(){
-  console.log("Hello")
+  console.log("Hello");
+    grantPermission();
 })
