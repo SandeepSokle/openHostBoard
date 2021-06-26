@@ -6,16 +6,16 @@ let stopBtn = document.querySelector(".stop");
 
 
 permissionBtn.addEventListener("click", function (e) {
-    grantPermission(e.currentTarget);
+    grantPermission();
     console.log("ok:")
     socket.emit("myclick");
   });
 
-function grantPermission(target) {
-  if (target.classList.contains("selectPermissionBtn")) {
-    target.classList.remove("selectPermissionBtn");
+function grantPermission() {
+  if (permissionBtn.classList.contains("selectPermissionBtn")) {
+    permissionBtn.classList.remove("selectPermissionBtn");
   } else {
-    target.classList.add("selectPermissionBtn");
+    permissionBtn.classList.add("selectPermissionBtn");
   }
 
 }
