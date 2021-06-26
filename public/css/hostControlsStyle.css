@@ -65,9 +65,17 @@ span {
 .clientControl{
         position: fixed;
         right: 10px;
-        top: 10px;    
-}
-
-.annotation{
-    background-color:#c7b299 ;
+        top: 10px; 
+        padding: 14px;   
+        background-color:#c7b299 ;
+      }
+      
+      .annotation{
+  background-color:#ecd078 ;
+    border: none;
+  }
+  
+  .annotationSelction{
+    background-color:#aee239 ;
+    border: none;
 }

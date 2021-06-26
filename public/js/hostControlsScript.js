@@ -9,6 +9,14 @@ annotation.addEventListener("click",function(){
   if(confirm("Send request to annotation")==true){
     socket.emit("createReq");
   }
+
+  if(isreq){
+    if (annotation.classList.contains("annotationSelction")) {
+      annotation.classList.remove("annotationSelction");
+    } else {
+      annotation.classList.add("annotationSelction");
+    }
+  }
 })
 
 permissionBtn.addEventListener("click", function (e) {
