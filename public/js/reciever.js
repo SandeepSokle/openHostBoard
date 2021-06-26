@@ -30,7 +30,6 @@ socket.on("onundo", function() {
   undoMaker();
 });
 socket.on("onredo", function() {
-  console.log("stop Event");
   redoMaker();
 });
 
@@ -38,10 +37,18 @@ socket.on("onclick",function(){
   console.log("Hello")
   
   grantPermission();
+  alert("Now you can Use Annotation:")
 })
 
 socket.on("onstop",function(){
   console.log("stop event");
   window.location.assign("endingmeeting.html");
+})
 
+
+socket.on("req",function(){
+  if(confirm("Client Want to Annotate")){
+    grantPermission();
+    socket.emit("myclick");
+  }
 })

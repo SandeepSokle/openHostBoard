@@ -3,7 +3,13 @@
 let stopBtn = document.querySelector(".stop");
 // let body = document.querySelector("body");
 let permissionBtn = document.querySelector(".permission");
+let annotation = document.querySelector(".annotation");
 
+annotation.addEventListener("click",function(){
+  if(confirm("Send request to annotation")){
+    socket.emit("createReq");
+  }
+})
 
 permissionBtn.addEventListener("click", function (e) {
   grantPermission();
