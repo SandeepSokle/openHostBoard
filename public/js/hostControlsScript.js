@@ -38,9 +38,4 @@ socket.emit("stopboard");
   // </div>
   // </div>`;
 });
-
-socket.on("accknowlege", function () {
-  let permissionBtn = document.querySelector(".permission");
-  permissionBtn.classList.add("selectPermissionBtn");
-
-});
+;
