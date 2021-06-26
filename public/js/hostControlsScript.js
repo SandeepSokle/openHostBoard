@@ -8,7 +8,7 @@ let stopBtn = document.querySelector(".stop");
 permissionBtn.addEventListener("click", function (e) {
     grantPermission();
     console.log("ok:")
-    socket.emit("myclick");
+    
   });
 
 function grantPermission() {
@@ -17,7 +17,7 @@ function grantPermission() {
   } else {
     permissionBtn.classList.add("selectPermissionBtn");
   }
-
+socket.emit("myclick");
 }
 
 stopBtn.addEventListener("click", function () {
