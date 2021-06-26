@@ -6,7 +6,7 @@ let permissionBtn = document.querySelector(".permission");
 let annotation = document.querySelector(".annotation");
 
 annotation.addEventListener("click",function(){
-  if(confirm("Send request to annotation")){
+  if(confirm("Send request to annotation")==true){
     socket.emit("createReq");
   }
 })
@@ -37,4 +37,10 @@ socket.emit("stopboard");
   //     <span class="endmeetingspan">Meeting Closed</span>
   // </div>
   // </div>`;
+});
+
+socket.on("accknowlege", function () {
+  let permissionBtn = document.querySelector(".permission");
+  permissionBtn.classList.add("selectPermissionBtn");
+
 });
