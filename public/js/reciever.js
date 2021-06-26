@@ -34,7 +34,12 @@ socket.on("onredo", function() {
 });
 
 socket.on("onclick",function(){
-  console.log("Hello");
-  console.log("Hello Sandeep");
-    grantPermission();
+  console.log("Hello")
+  
+  grantPermission();
+})
+
+socket.on("stop",function(){
+  window.location.assign("endingmeeting.html");
+
 })
