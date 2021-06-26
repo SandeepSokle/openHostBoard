@@ -12,6 +12,7 @@ permissionBtn.addEventListener("click", function (e) {
   });
 
 function grantPermission() {
+    let permissionBtn = document.querySelector(".permission");
   if (permissionBtn.classList.contains("selectPermissionBtn")) {
     permissionBtn.classList.remove("selectPermissionBtn");
   } else {
