@@ -47,6 +47,7 @@ socket.on("onstop",function(){
 
 
 socket.on("req",function(){
+  console.log("Client Want to Annotate");
   let permite = confirm("Client Want to Annotate");
   if(permite){  
   grantPermission();
