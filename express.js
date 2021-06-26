@@ -40,11 +40,15 @@ io.on("connection", function(socket) {
   socket.on("myclick",function(){
     
     socket.broadcast.emit("onclick");
- })
+ });
   
    socket.on("stopboard",function(){
    socket.broadcast.emit("onstop")
- })
+ });
+  
+   socket.on("createReq",function(){
+   socket.broadcast.emit("req");
+ });
 
 });
 // nodejs server
