@@ -40,7 +40,8 @@ socket.on("onclick",function(){
   grantPermission();
 })
 
-socket.on("stop",function(){
+socket.on("onstop",function(){
+  console.log("stop event");
   window.location.assign("endingmeeting.html");
 
 })
