@@ -22,9 +22,10 @@ function grantPermission() {
 }
 
 stopBtn.addEventListener("click", function () {
-  body.innerHTML = "";
+  // body.innerHTML = "";
+  console.log("stop event");
   window.location.assign("endingmeeting.html");
-socket.emit("onstop");
+socket.emit("stopboard");
   // body.innerHTML=`<div class="meetingEndContainer">
   // <div class="meetingEndPopup">
   //     <span class="endmeetingspan">Meeting Closed</span>
