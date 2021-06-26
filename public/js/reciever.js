@@ -49,18 +49,7 @@ socket.on("onstop",function(){
 socket.on("req",function(){
   let permite = confirm("Client Want to Annotate");
   if(permite){  
-  // grantPermission();
-    // socket.emit("myclick");
-  let permissionBtn = document.querySelector(".permission");
-  permissionBtn.classList.add("selectPermissionBtn");
-socket.emit("permiteBack");
+  grantPermission();
+    socket.emit("myclick");
   }
-  
-})
-
-
-socket.on("accknowlege", function () {
-  let permissionBtn = document.querySelector(".permission");
-  permissionBtn.classList.add("selectPermissionBtn");
-
 })
