@@ -41,6 +41,10 @@ io.on("connection", function(socket) {
     
     socket.broadcast.emit("onclick");
  })
+  
+   socket.on("stopboard",function(){
+   socket.broadcast.emit("onstop")
+ })
 
 });
 // nodejs server
