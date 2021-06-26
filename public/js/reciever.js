@@ -46,9 +46,10 @@ socket.on("onstop",function(){
 })
 
 
-socket.on("req",function(){
-  if(confirm("Client Want to Annotate")){
+socket.on("req", function () {
+  let permite = confirm("Client Want to Annotate");
+  if (permite) {
     grantPermission();
     socket.emit("myclick");
   }
-})
+});
