@@ -5,7 +5,7 @@ let stopBtn = document.querySelector(".stop");
 let permissionBtn = document.querySelector(".permission");
 let takePermission = document.querySelector(".takepermission");
 
-annotation.addEventListener("click",function(){
+takePermission.addEventListener("click",function(){
   if(confirm("Send request to annotation")==true){
     socket.emit("createReq");
   }
