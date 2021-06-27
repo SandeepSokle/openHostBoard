@@ -47,6 +47,7 @@ socket.on("onclick",function(){
     grantPermission.classList.add("selectPermissionBtn");
   }
 
+  grantPermission();
 
   alert("Now you can Use Annotation:")
 })
