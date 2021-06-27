@@ -51,12 +51,9 @@ socket.on("onstop",function(){
 
 
 socket.on("req",function(){
-  let permite = confirm("Client Want to Annotate");
-  if(permite && !isreq){
-    isreq = true;  
-  grantPermission();
-    socket.emit("myclick");
-  }
+
+  confirm("Client Want to Annotate");
+
 })
 
 

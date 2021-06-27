@@ -28,17 +28,9 @@ span {
   left: 0;
 
   background: #1d976c;
-  background: -webkit-linear-gradient(
-    to right,
-    #93f9b9,
-    #1d976c
-  );
-  
-  background: linear-gradient(
-    to right,
-    #93f9b9,
-    #1d976c
-  );
+  background: -webkit-linear-gradient(to right, #93f9b9, #1d976c);
+
+  background: linear-gradient(to right, #93f9b9, #1d976c);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,20 +54,33 @@ span {
   font-size: 75px;
 }
 
-.clientControl{
-        position: fixed;
-        right: 10px;
-        top: 10px; 
-        padding: 14px;   
-        background-color:#c7b299 ;
-      }
-      
-      .annotation{
-  background-color:#ecd078 ;
-    border: none;
-  }
-  
-  .annotationSelction{
-    background-color:#aee239 ;
-    border: none;
+.clientControl {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  padding: 14px;
+  background-color: #c7b299;
+  display: flex;
+}
+
+.btn{
+  margin: 4px;
+}
+
+.annotation {
+  background-color: #ecd078;
+  border: none;
+}
+
+.annotationSelction {
+  background-color: #aee239;
+  border: none;
+}
+
+.takepermission {
+  height: 2rem;
+}
+
+.takepermission img {
+  height: 100%;
 }

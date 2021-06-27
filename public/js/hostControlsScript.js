@@ -3,19 +3,11 @@
 let stopBtn = document.querySelector(".stop");
 // let body = document.querySelector("body");
 let permissionBtn = document.querySelector(".permission");
-let annotation = document.querySelector(".annotation");
+let takePermission = document.querySelector(".takepermission");
 
 annotation.addEventListener("click",function(){
   if(confirm("Send request to annotation")==true){
     socket.emit("createReq");
-  }
-
-  if(isreq){
-    if (annotation.classList.contains("annotationSelction")) {
-      annotation.classList.remove("annotationSelction");
-    } else {
-      annotation.classList.add("annotationSelction");
-    }
   }
 })
 
