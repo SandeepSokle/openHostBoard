@@ -18,11 +18,11 @@ permissionBtn.addEventListener("click", function (e) {
   if (grantPermission.classList.contains("selectPermissionBtn")) {
     grantPermission.classList.remove("selectPermissionBtn");
     permissionBtn.classList.remove("selectPermissionBtn");
-    alert("Now you can not Use Annotation:")
+//     alert("Now you can not Use Annotation:")
   } else {
     grantPermission.classList.add("selectPermissionBtn");
     permissionBtn.classList.add("selectPermissionBtn");
-    alert("Now you can Use Annotation:")
+//     alert("Now you can Use Annotation:")
   }
   socket.emit("myclick");
   
