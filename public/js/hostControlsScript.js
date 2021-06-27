@@ -12,20 +12,30 @@ takePermission.addEventListener("click",function(){
 })
 
 permissionBtn.addEventListener("click", function (e) {
-  grantPermission();
-  console.log("ok:")
+    let permissionBtn = document.querySelector(".permission");
+  let grantPermission = document.querySelector(".takepermission img");
+  
+  if (grantPermission.classList.contains("selectPermissionBtn")) {
+    grantPermission.classList.remove("selectPermissionBtn");
+    permissionBtn.classList.remove("selectPermissionBtn");
+    alert("Now you can not Use Annotation:")
+  } else {
+    grantPermission.classList.add("selectPermissionBtn");
+    permissionBtn.classList.add("selectPermissionBtn");
+    alert("Now you can Use Annotation:")
+  }
   socket.emit("myclick");
   
 });
 
-function grantPermission() {
-  let permissionBtn = document.querySelector(".permission");
-  if (permissionBtn.classList.contains("selectPermissionBtn")) {
-    permissionBtn.classList.remove("selectPermissionBtn");
-  } else {
-    permissionBtn.classList.add("selectPermissionBtn");
-  }
-}
+// function grantPermission() {
+//   let permissionBtn = document.querySelector(".permission");
+//   if (permissionBtn.classList.contains("selectPermissionBtn")) {
+//     permissionBtn.classList.remove("selectPermissionBtn");
+//   } else {
+//     permissionBtn.classList.add("selectPermissionBtn");
+//   }
+// }
 
 stopBtn.addEventListener("click", function () {
   // body.innerHTML = "";
