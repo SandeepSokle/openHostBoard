@@ -38,9 +38,16 @@ socket.on("onredo", function() {
 });
 
 socket.on("onclick",function(){
-  console.log("Hello")
+  // console.log("Hello")
   
-  grantPermission();
+  let grantPermission = document.querySelector(".takepermission img");
+  if (grantPermission.classList.contains("selectPermissionBtn")) {
+    grantPermission.classList.remove("selectPermissionBtn");
+  } else {
+    grantPermission.classList.add("selectPermissionBtn");
+  }
+
+
   alert("Now you can Use Annotation:")
 })
 
